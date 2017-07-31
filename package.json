@@ -1,6 +1,6 @@
 {
   "name": "plain-cache",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "Plain simple, in-memory, tiny-in-size JavaScript cache library",
   "main": "build/cache.js",
   "types": "build/cache.d.ts",
