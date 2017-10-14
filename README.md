@@ -38,6 +38,22 @@ cache.del('foo')
 cache.clear()
 ```
 
+`plain-cache` has some convenient timing TTL constants.
+
+```
+cache.VALID_FOR_10_SECONDS
+cache.VALID_FOR_30_SECONDS
+cache.VALID_FOR_A_MINUTE
+cache.VALID_FOR_5_MINUTES
+cache.VALID_FOR_10_MINUTES
+cache.VALID_FOR_30_MINUTES
+cache.VALID_FOR_AN_HOUR
+cache.VALID_FOR_A_DAY
+cache.VALID_FOR_A_WEEK
+cache.VALID_FOR_30_DAYS
+cache.VALID_FOREVER
+```
+
 ### Test
 
 To run unit tests locally:

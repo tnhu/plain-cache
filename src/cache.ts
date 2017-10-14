@@ -3,7 +3,6 @@ type CachedItem = {
 }
 
 const GC_INTERVAL = 1000 * 60 * 5 // gc runs in every 5 minutes
-
 let data: CachedItem = {}
 
 /**
@@ -78,8 +77,8 @@ export default {
   VALID_FOR_10_MINUTES: 600000,
   VALID_FOR_30_MINUTES: 1800000,
   VALID_FOR_AN_HOUR:    3600000,
-  VALID_FOR_A_DAY:      3600000 * 24,
-  VALID_FOR_A_WEEK:     3600000 * 24 * 7,
-  VALID_FOR_30_DAYS:    3600000 * 24 * 30,
+  VALID_FOR_A_DAY:      86400000,
+  VALID_FOR_A_WEEK:     604800000,
+  VALID_FOR_30_DAYS:    2592000000,
   VALID_FOREVER:        Infinity
 }
