@@ -40,7 +40,7 @@ cache.clear()
 
 `plain-cache` has some convenient timing TTL constants.
 
-```
+```javascript
 cache.VALID_FOR_10_SECONDS
 cache.VALID_FOR_30_SECONDS
 cache.VALID_FOR_A_MINUTE
