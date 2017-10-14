@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var GC_INTERVAL = 1000 * 60; // Interval Schedule to invalidate cache in every 60 secs
+var GC_INTERVAL = 1000 * 60 * 5; // gc runs in every 5 minutes
 var data = {};
 /**
  * Get cache
@@ -60,5 +60,18 @@ setTimeout(function gc() {
     });
     setTimeout(gc, GC_INTERVAL);
 }, GC_INTERVAL);
-exports.default = { set: set, get: get, del: del, clear: clear };
+exports.default = {
+    set: set, get: get, del: del, clear: clear,
+    VALID_FOR_10_SECONDS: 10000,
+    VALID_FOR_30_SECONDS: 30000,
+    VALID_FOR_A_MINUTE: 60000,
+    VALID_FOR_5_MINUTES: 300000,
+    VALID_FOR_10_MINUTES: 600000,
+    VALID_FOR_30_MINUTES: 1800000,
+    VALID_FOR_AN_HOUR: 3600000,
+    VALID_FOR_A_DAY: 3600000 * 24,
+    VALID_FOR_A_WEEK: 3600000 * 24 * 7,
+    VALID_FOR_30_DAYS: 3600000 * 24 * 30,
+    VALID_FOREVER: Infinity
+};
 //# sourceMappingURL=cache.js.map

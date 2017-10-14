@@ -26,5 +26,16 @@ declare const _default: {
     get: (key: string, defaultValue?: any, ttl?: number) => any;
     del: (key: string) => void;
     clear: () => void;
+    VALID_FOR_10_SECONDS: number;
+    VALID_FOR_30_SECONDS: number;
+    VALID_FOR_A_MINUTE: number;
+    VALID_FOR_5_MINUTES: number;
+    VALID_FOR_10_MINUTES: number;
+    VALID_FOR_30_MINUTES: number;
+    VALID_FOR_AN_HOUR: number;
+    VALID_FOR_A_DAY: number;
+    VALID_FOR_A_WEEK: number;
+    VALID_FOR_30_DAYS: number;
+    VALID_FOREVER: number;
 };
 export default _default;
